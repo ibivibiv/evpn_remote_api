@@ -1,5 +1,4 @@
-import paramiko_handler
-
+from evpn_remote_api import paramiko_handler
 
 def create_bgp_router(host, username, password, asn, router_id, route_reflectors):
     rr_command = []
@@ -38,7 +37,3 @@ def get_bgp_router_id(host, username, password) :
             id = parts[i+1]
             return id
     return False
-
-#create_bgp_router('192.168.0.96', 'root', 'hal2000', 65555, '192.168.0.245', ['192.168.0.234','192.168.0.222'])
-
-get_bgp_router_id('192.168.0.96', 'root', 'hal2000')
