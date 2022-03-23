@@ -49,6 +49,3 @@ def evpn_up(host, username, password, name):
     return True
 
 
-results = create_evpn_vni_interface('192.168.0.96', 'root', 'hal2000', 'vxlan200', 200, 4789, '192.168.0.96')
-# results = delete_evpn_vni_interface('192.168.0.96', 'root', 'hal2000', 'vxlan200')
-print(results)
