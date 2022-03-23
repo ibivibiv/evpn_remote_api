@@ -1,10 +1,10 @@
 import time
 import paramiko
-
+from paramiko.client import AutoAddPolicy
 
 def do_paramiko(host, username, password, command):
     ssh = paramiko.SSHClient()
-    ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+    ssh.set_missing_host_key_policy(AutoAddPolicy)
     ssh.connect(host, username=username, password=password)
     print('Successfully connected to %s' % host)
 
