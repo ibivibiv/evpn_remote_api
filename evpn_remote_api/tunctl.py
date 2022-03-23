@@ -1,4 +1,4 @@
-import paramiko_handler
+from evpn_remote_api import paramiko_handler
 
 
 def create_tap(host, username, password, tap_name):
@@ -29,5 +29,3 @@ def tap_up(host, username, password, name):
     return True
 
 
-results = delete_tap('192.168.0.96', 'root', 'hal2000', 'tap5')
-print(results)
