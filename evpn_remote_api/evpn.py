@@ -1,4 +1,4 @@
-import paramiko_handler
+from evpn_remote_api import paramiko_handler
 
 
 def list_evpn(host, username, password):
