@@ -1,4 +1,4 @@
-import paramiko_handler
+from evpn_remote_api import paramiko_handler
 
 
 def create_bridge(host, username, password, bridge_name):
