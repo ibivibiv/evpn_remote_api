@@ -41,7 +41,3 @@ def bridge_up(host, username, password, bridge_name):
     return True
 
 
-# results = create_bridge('192.168.0.96', 'root', 'hal2000', 'br400')
-# results = delete_bridge('192.168.0.96', 'root', 'hal2000', 'br400')
-results = addif_bridge('192.168.0.96', 'root', 'hal2000', 'br400', "vxlan200")
-print(results)
